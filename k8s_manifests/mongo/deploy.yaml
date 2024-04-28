@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: workshop
+  namespace: 3-tier-aws
   name: mongodb
 spec:
   replicas: 1
