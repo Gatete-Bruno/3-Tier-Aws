@@ -17,7 +17,7 @@ jobs:
         run: docker build -t bruno74t/frontend-image:latest frontend
 
       - name: Log into Docker Hub
-        run: echo ${{ secrets.DOCKER_PASSWORD }} | docker login --username ${{ secrets.DOCKER_USERNAME }} --password-stdin
+        run: echo ${{ secrets.DOCKER_PASSWORD_SYMBOLS_ALLOWED }} | docker login --username ${{ secrets.DOCKER_USERNAME }} --password-stdin
 
       - name: Push Frontend Docker Image
         run: docker push bruno74t/frontend-image:latest
@@ -33,7 +33,7 @@ jobs:
         run: docker build -t bruno74t/backend-image:latest backend
 
       - name: Log into Docker Hub
-        run: echo ${{ secrets.DOCKER_PASSWORD }} | docker login --username ${{ secrets.DOCKER_USERNAME }} --password-stdin
+        run: echo ${{ secrets.DOCKER_PASSWORD_SYMBOLS_ALLOWED }} | docker login --username ${{ secrets.DOCKER_USERNAME }} --password-stdin
 
       - name: Push Backend Docker Image
         run: docker push bruno74t/backend-image:latest
