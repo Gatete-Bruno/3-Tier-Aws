@@ -3,7 +3,7 @@ name: Build and Push Frontend Docker Image
 on:
   push:
     branches:
-      - main  # Or whichever branch you want to trigger the workflow
+      - main  #Or whichever branch you want to trigger the workflow
 
 jobs:
   build-and-push:
